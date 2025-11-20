@@ -1,0 +1,11 @@
+for N in range(0,256):
+    a=bin(N)[2:]
+    if len(a)<8:
+        a=(8-len(a))*'0'+a
+    a=a.replace('1', 'b')
+    a=a.replace('0','1')
+    a=a.replace('b','0')
+    R=int(a,2)
+    g=R-N
+    if g==133:
+        print(N)
