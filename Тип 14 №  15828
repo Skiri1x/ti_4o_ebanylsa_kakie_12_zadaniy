@@ -1,0 +1,6 @@
+a=36**8+6*20-12
+b=str()
+while a>0:
+    b+=str(a%6)
+    a//6 
+print(b.count('5'))
