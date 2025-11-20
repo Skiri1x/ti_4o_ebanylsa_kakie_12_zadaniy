@@ -1,0 +1,9 @@
+for x in range(0,1000):
+    a=4*7**24+6*7**13+4*49**4+5*343**2+20-x
+    b=str()
+    while a>0:
+        b+=str(a%7)
+        a//7 
+    if b.count('6')>b.count('7'):
+        print(b)
+        break
